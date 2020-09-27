@@ -1,0 +1,11 @@
+
+!git config --global user.email "gytjdwjs@cu.ac.kr"
+!git config --global user.name "hyoseong-j"
+from getpass import getpass
+password = getpass('Password:')
+!git clone https://hyoseong-j:$password@github.com/hyoseong-j/TnensorFlow_Machine_Learning
+
+
+
+!git commit -m ' commot message'
+!git push origin master
