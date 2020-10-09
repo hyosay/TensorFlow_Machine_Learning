@@ -3,7 +3,7 @@
 # why activation function
 
 * #### 그저 가중치와 편향만 구해서 더하면 선형연결이 되는데
-#### 이것을 비션형으로 만들어 주기 위해서 activation fonction이 필요하다.
+#### 이것을 비션형으로 만들어 주기 위해서 activation function이 필요하다.
 
 
 ## 1. sigmoid
