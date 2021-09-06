@@ -1,4 +1,51 @@
 # 📌 TensorFlow_Machine_Learning
+## 모두를 위한 딥러닝 정리 및 머신러닝 공부
+
+## supervised learning
+- image labeling
+- Email spam filter
+- Predicting exam score
+
+supervised learning에는 Training data set이 존재한다.
+
+## Types of supervised learning
+
+- regression
+
+|x(hours)|y(score)|
+|---|---|
+|10|90|
+|9|80|
+|3|50|
+|2|30|
+
+(Linear) Hypothesis을 정한다.  
+> 7시간 공부하면 점수가 얼마가 나올까??   
+> H(*x*) = Wx + b
+
+### Cost(Loss) function
+
+`H(x) - y` 를 쓰지않고 (H(*x*) -y)<sup>2</sup>를 쓴다.   
+ 왜냐하면 가설의 값과 실제 데이터의 차가 양수나 음수 무엇이 나올지 모르며 이것들이 합쳐져서 상쇄가 될 수 있기 때문이다.  
+ ex 3 + (-3) + 2 + (-2) = 0  <- Feature를 제대로 찾지 못 할 수도 있다.
+ 
+
+- binary classification ex)yes/no, pass/ non-pass
+
+|x(hours)|y(pass/fail)|
+|---|---|
+|10|P|
+|9|P|
+|3|F|
+|2|F|
+- multi-label classification  ex)학점
+
+|x(hours)|y(grade)|
+|---|---|
+|10|A|
+|9|B|
+|3|C|
+|2|D|
 
 
 ## why activation function
