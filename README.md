@@ -10,7 +10,7 @@ supervised learning에는 Training data set이 존재한다.
 
 ## Types of supervised learning
 
-- regression
+### - regression
 
 |x(hours)|y(score)|
 |---|---|
@@ -19,18 +19,22 @@ supervised learning에는 Training data set이 존재한다.
 |3|50|
 |2|30|
 
-(Linear) Hypothesis을 정한다.  
-> 7시간 공부하면 점수가 얼마가 나올까??   
-> H(*x*) = Wx + b
+(Linear) Hypothesis(가설)을 정한다.  
+> ex) 7시간 공부하면 점수가 얼마가 나올까??   
 
-### Cost(Loss) function
+#### Cost(Loss) function
 
-`H(x) - y` 를 쓰지않고 (H(*x*) -y)<sup>2</sup>를 쓴다.   
- 왜냐하면 가설의 값과 실제 데이터의 차가 양수나 음수 무엇이 나올지 모르며 이것들이 합쳐져서 상쇄가 될 수 있기 때문이다.  
- ex 3 + (-3) + 2 + (-2) = 0  <- Feature를 제대로 찾지 못 할 수도 있다.
+`H(x) - y` 를 쓰지않고 `(H(x) -y)^2`를 쓴다.   
+ 왜냐하면 가설의 값과 실제 데이터의 차가 양수나 음수 무엇이 나올지 모르며 이것들이 합쳐져서 상쇄가 될 수 있기 때문이다.
+ > 3 + (-3) + 2 + (-2) = 0  <- Feature끼리 상쇄가 되어 제대로된 Feature를 찾지 못 할 수도 있다.
+ 
+ <img width="400" alt="스크린샷 2021-09-06 오후 6 41 18" src="https://user-images.githubusercontent.com/46950334/132196808-6b1dc77c-45bd-4b05-ba27-9a6f344533fb.png">
+ 
+ `H(x) = Wx + b`   
+ **point.1  *MINIMIZE COST(W, b)***
  
 
-- binary classification ex)yes/no, pass/ non-pass
+### - binary classification   ex) yes/no, pass/ non-pass
 
 |x(hours)|y(pass/fail)|
 |---|---|
@@ -38,7 +42,8 @@ supervised learning에는 Training data set이 존재한다.
 |9|P|
 |3|F|
 |2|F|
-- multi-label classification  ex)학점
+
+### - multi-label classification  ex)학점
 
 |x(hours)|y(grade)|
 |---|---|
