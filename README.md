@@ -33,6 +33,7 @@ supervised learning에는 Training data set이 존재한다.
  `H(x) = Wx + b`   
  **point.1  *MINIMIZE COST(W, b)***
  
+ ### linear regression과 cost(loss) function을 정리해보자면 결국 H(x)의 값이 무엇인지 hypothesis이 궁금할떄 minimize cost_func을 , 가장 기본적으로 mse(오차제곱합)을 사용하며 W의 값과 b의 값을 최소화 하기 위해 gradient descent algorithm을 사용하는 것이다.
 
 ### - binary classification   ex) yes/no, pass/ non-pass
 
