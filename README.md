@@ -44,6 +44,11 @@ supervised learning에는 Training data set이 존재한다.
 |3|F|
 |2|F|
 
+binary classification도 linear regression으로 구분을 지어보려했지만 x의 값이 커지거나,작아지면 손실비용이 크게 조정되기 때문에 이것을 해결하기 위해 곡선 'S'모앙인 logistic func(sigmoid func) 고안했다.
+
+logistic regression에서는 cost를 mse, gredient descent algorithm을 사용하면 local variable, global variable이 존재하여 사용하기 불편하다. 
+그래서 
+cost func을 mse로 선택하여 gredient descent형태로 나타내면 안되고 cross entropy를 사용하여 2차곡선의 형태로 만든 후 gredient descent algorithm을 사용해야한다.
 ### - multi-label classification  ex)학점
 
 |x(hours)|y(grade)|
