@@ -86,12 +86,6 @@ cost func을 mse로 선택하여 gredient descent형태로 나타내면 안되�
 딥러닝, 머신러닝 공부 방향
 1. ian goodfellow의 deep learning을 통해서 이론을 마스터하기.
 
-2. 머신러닝책을 병행하여 공부하기
- 
-## 나의 목표는 GAN을 연구하는 것이다.
-
-
-
 참고 : https://gomguard.tistory.com/184?category=712467
 
  
